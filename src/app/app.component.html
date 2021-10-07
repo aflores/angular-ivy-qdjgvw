@@ -1,0 +1,78 @@
+<div class="d-flex flex-column min-vh-100">
+  <header>
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+  </header>
+  <content>
+    <div class="card m-2 p-1">
+      <div class="d-flex flex-row">
+        <div class="mb-2 col-3 me-2">
+          <label for="formGroupExampleInput" class="form-label">PNR </label>
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              id="inputtext04"
+              aria-describedby="inputGroupFileAddon04"
+              aria-label="Upload"
+            />
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="inputGroupFileAddon04"
+            >
+              Retrieve
+            </button>
+          </div>
+        </div>
+        <div class="mb-3 col-8 ms-2">
+          <label class="form-label"
+            >Select Rules File
+            <i
+              class="bi-book"
+              style="font-size: 1em"
+              ngbTooltip="Preview Rules File"
+            ></i
+          ></label>
+          <div class="input-group">
+            <input
+              type="file"
+              class="form-control form-control-sm"
+              id="inputGroupFile02"
+            />
+            <label class="input-group-text" for="inputGroupFile02"
+              >Upload</label
+            >
+          </div>
+          <small style="display:block">last updated: 15/07/21</small>
+          
+        </div>
+      </div>
+      <div class="mb-2">
+        <ud-element class="row col-9" label="UD 11 aaaa"></ud-element>
+        <ud-element class="row col-9" label="UD 12 bbbb"></ud-element>
+        <ud-element class="row col-9" label="UD 13 cccc"></ud-element>
+        <ud-element class="row col-9" label="UD 14 dddd"></ud-element>
+        <ud-element class="row col-9" label="UD 15 eeee"></ud-element>
+      </div>
+
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-sm btn-primary me-2">Close</button>
+        <button class="btn btn-sm btn-primary">Update Remarks</button>
+      </div>
+    </div>
+  </content>
+  <footer class="mt-auto">footer</footer>
+</div>
